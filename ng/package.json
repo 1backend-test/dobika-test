@@ -1,0 +1,32 @@
+{
+	"name": "@1backend/dobika-test",
+	"version": "0.0.1",
+	"description": "Clients for 1Backend services of dobika-test",
+	"main": "./lib/index.js",
+	"typings": "./lib/index.d.ts",
+	"scripts": {
+	  "prepare": "npm run build",
+	  "build": "tsc"
+	},
+	"keywords": [
+	  "typescript",
+	  "node"
+	],
+	"repository": {
+	  "type": "git",
+	  "url": "https://github.com/1backend/dobika-test.git"
+	},
+	"dependencies": {
+	  "@1backend/ng-client": "*",
+
+	},
+	"devDependencies": {
+		"@angular/cli": "^1.5.3",
+		"@angular/compiler-cli": "^5.0.0",
+		"typescript": "~2.4.2",
+		"@angular/core": "^5.0.0",
+		"@angular/common": "^5.0.0",
+		"rxjs": "^5.5.2",
+		"zone.js": "^0.8.14"
+	}
+  }
