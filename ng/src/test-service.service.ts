@@ -10,7 +10,7 @@ export interface Test {
 
 
 @Injectable()
-export class TestService {
+export class Service {
   constructor(private ngClient: NgClient) {}
 
   GetHi(howManyTimes: number, allCool: boolean): Promise<void> {

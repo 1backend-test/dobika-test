@@ -1,2 +1,3 @@
 
-// this file is intentionally empty
+export * from './services/test-service.service';
+
