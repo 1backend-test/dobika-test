@@ -12,9 +12,9 @@ type Test struct {
 }
 
 
-func GetHi() error {
+func GetHi(howManyTimes int64, allCool bool) error {
 	var ret 
-	return ret, goclient.New(Token).Call("dobika-test", "test-service", "GET", "/hi", map[string]interface{}{  }, &ret)
+	return ret, goclient.New(Token).Call("dobika-test", "test-service", "GET", "/hi", map[string]interface{}{ "howManyTimes": howManyTimes, "allCool": allCool }, &ret)
 }
 
 func GetImportedHi() error {

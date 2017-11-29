@@ -13,8 +13,8 @@ export interface Test {
 export class TestService {
   constructor(private ngClient: NgClient) {}
 
-  GetHi(): Promise<void> {
-    return this.ngClient.call<void>("dobika-test", "test-service", "GET", "/hi", {  });
+  GetHi(howManyTimes: number, allCool: boolean): Promise<void> {
+    return this.ngClient.call<void>("dobika-test", "test-service", "GET", "/hi", { "howManyTimes": howManyTimes, "allCool": allCool });
   }
 
   GetImportedHi(): Promise<void> {
