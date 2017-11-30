@@ -21,8 +21,8 @@ export class Service {
     return this.ngClient.call<void>("dobika-test", "test-service", "GET", "/imported-hi", {  });
   }
 
-  GetSqlExample(): Promise<void> {
-    return this.ngClient.call<void>("dobika-test", "test-service", "GET", "/sql-example", {  });
+  GetSqlExample(): Promise<"String"> {
+    return this.ngClient.call<"String">("dobika-test", "test-service", "GET", "/sql-example", {  });
   }
 
 }
