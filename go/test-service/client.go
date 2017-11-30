@@ -22,8 +22,8 @@ func GetImportedHi() error {
 	return ret, goclient.New(Token).Call("dobika-test", "test-service", "GET", "/imported-hi", map[string]interface{}{  }, &ret)
 }
 
-func GetSqlExample() (&#34;String&#34;, error) {
-	var ret &#34;String&#34;
+func GetSqlExample() (string, error) {
+	var ret string
 	return ret, goclient.New(Token).Call("dobika-test", "test-service", "GET", "/sql-example", map[string]interface{}{  }, &ret)
 }
 
