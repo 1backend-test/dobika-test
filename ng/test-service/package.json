@@ -1,6 +1,6 @@
 {
 	"name": "@1backend/dobika-test-test-service-ng",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"description": "Clients for 1Backend services of dobika-test",
 	"main": "./lib/index.js",
 	"typings": "./lib/index.d.ts",
